@@ -1,8 +1,8 @@
 # 𝐖𝐨𝐨𝐝𝐥𝐚𝐧𝐝 𝐌𝐞𝐭𝐚𝐥 𝐖𝐨𝐫𝐤𝐬 𝐏𝐫𝐨𝐣𝐞𝐜𝐭
 
 ## 𝐖𝐚𝐠𝐠𝐚 𝐖𝐚𝐠𝐠𝐚 𝐖𝐚𝐠𝐨𝐧𝐬
-SwagFly01, Brain O'Corn'on'the'Cob, Craig Arnolfini, Extreme Dumbness <br>
-Cichael Mullen
+𝘚𝘸𝘢𝘨𝘍𝘭𝘺01, 𝘉𝘳𝘢𝘪𝘯 𝘖'𝘊𝘰𝘳𝘯'𝘰𝘯'𝘵𝘩𝘦'𝘊𝘰𝘣, 𝘊𝘳𝘢𝘪𝘨 𝘈𝘳𝘯𝘰𝘭𝘧𝘪𝘯𝘪, 𝘌𝘹𝘵𝘳𝘦𝘮𝘦 𝘋𝘶𝘮𝘣𝘯𝘦𝘴𝘴 <br>
+𝘊𝘪𝘤𝘩𝘢𝘦𝘭 𝘔𝘶𝘭𝘭𝘦𝘯
 
 
 ## 𝐑𝐞𝐬𝐨𝐮𝐫𝐜𝐞𝐬
