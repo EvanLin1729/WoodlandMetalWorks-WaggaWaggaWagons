@@ -1,0 +1,38 @@
+header {
+    text-align: center;
+    padding: 12px;
+}
+
+
+/* Nav Bar */
+nav {
+  width: 100%;
+  background-color: white;
+  overflow: auto;
+}
+
+nav a {
+  float: right;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  width: 25%; 
+  text-align: center; 
+}
+
+nav li {
+    list-style:none;
+}
+
+nav a:hover {
+    background-color:blue;
+    color:yellow;
+}
+
+.brand img{
+    max-height: 68px;
+	border-radius: 0px;
+	padding: 1px;
+	margin-top:30px;
+}
