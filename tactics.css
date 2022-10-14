@@ -104,6 +104,15 @@ nav a:hover {
     color: white;
 }
 
+.para-3 {
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    font-family: Verdana;
+    background-color: black;
+    color: white;
+}
+
 #box-left {
     width: 50%;
     clip-path: polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%);
