@@ -26,13 +26,5 @@ nav li {
 }
 
 nav a:hover {
-    background-color:blue;
-    color:yellow;
-}
-
-.brand img{
-    max-height: 68px;
-	border-radius: 0px;
-	padding: 1px;
-	margin-top:30px;
+    text: black;
 }
