@@ -1,0 +1,97 @@
+header {
+    text-align: center;
+    padding: 12px;
+}
+
+
+/* Nav Bar */
+nav {
+  width: 100%;
+  background-color: white;
+  overflow: auto;
+}
+
+nav a {
+  float: left;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 24px;
+  width: 25%; 
+  text-align: center; 
+}
+
+nav li {
+    list-style:none;
+}
+
+nav a:hover {
+    background-color:blue;
+    color:yellow;
+}
+
+.brand img{
+    max-height: 68px;
+	border-radius: 0px;
+	padding: 1px;
+	margin-top:30px;
+}
+
+.parallax-1 {
+            width: 100%;
+            height: 600px;
+            background: url('https://preview.redd.it/i9120dm88n271.png?width=960&crop=smart&auto=webp&s=aa2a449f40e845468d36a31f047d3cb1d22a8451');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        .parallax-1 h2 {
+            margin: auto;
+            position: relative;
+            left: 500px;
+            top: 300px;
+            width: 250px;
+            height: 32px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        .para-1 {
+            padding: 50px;
+            background-color: black;
+            color: white;
+            font-size: 17px;
+        }
+        
+        .parallax-2 {
+            width: 100%;
+            height: 600px;
+            background: url('https://i.redd.it/nw9o8cnjhfk61.jpg');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+  
+        /* Styling the title of second parallax */
+        .parallax-2 h2 {
+            margin: auto;
+            position: relative;
+            left: 500px;
+            top: 300px;
+            width: 250px;
+            height: 37px;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-family: Verdana;
+        }
+        
+        .para-2 {
+            text-align: center;
+            padding: 25px;
+            font-size: 17px;
+            font-family: Verdana;
+            background-color: black;
+            color: white;
+        }
