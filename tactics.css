@@ -6,23 +6,23 @@ header {
 
 /* Nav Bar */
 nav {
-  width: 100%;
-  background-color: white;
-  overflow: auto;
+    width: 100%;
+    background-color: white;
+    overflow: auto;
 }
 
 nav a {
-  float: left;
-  padding: 10px;
-  color: black;
-  text-decoration: none;
-  font-size: 24px;
-  width: 25%; 
-  text-align: center; 
+    float: left;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    width: 25%;
+    text-align: center;
 }
 
 nav li {
-    list-style:none;
+    list-style: none;
 }
 
 nav a:hover {
@@ -30,60 +30,90 @@ nav a:hover {
 }
 
 .parallax-1 {
-            width: 100%;
-            height: 600px;
-            background: url('https://media.tenor.com/images/0ebcae36d59242c0f372f40a7ae6c3f2/tenor.gif');
-            background-size: 100% 100%;
-            background-attachment: fixed;
-        }
-        .parallax-1 h2 {
-            margin: auto;
-            position: relative;
-            left: 500px;
-            top: 300px;
-            width: 250px;
-            height: 32px;
-            padding: 10px;
-            background-color: black;
-            color: white;
-            text-align: center;
-        }
-        .para-1 {
-            padding: 50px;
-            background-color: black;
-            color: white;
-            font-size: 17px;
-        }
-        
-        .parallax-2 {
-            width: 100%;
-            height: 600px;
-            background: url('https://c.tenor.com/VcR3cl_TNQsAAAAM/big-floppa-mad-floppa.gif');
-            background-size: 100% 100%;
-            background-attachment: fixed;
-        }
-  
-        /* Styling the title of second parallax */
-        .parallax-2 h2 {
-            margin: auto;
-            position: relative;
-            left: 500px;
-            top: 300px;
-            width: 250px;
-            height: 37px;
-            padding: 10px;
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-size: 30px;
-            font-family: Verdana;
-        }
-        
-        .para-2 {
-            text-align: center;
-            padding: 25px;
-            font-size: 17px;
-            font-family: Verdana;
-            background-color: black;
-            color: white;
-        }
+    width: 100%;
+    height: 600px;
+    background: url('https://media.tenor.com/images/0ebcae36d59242c0f372f40a7ae6c3f2/tenor.gif');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.parallax-1 h2 {
+    margin: auto;
+    position: relative;
+    left: 500px;
+    top: 300px;
+    width: 250px;
+    height: 32px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.para-1 {
+    padding: 50px;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+}
+
+.parallax-2 {
+    width: 100%;
+    height: 600px;
+    background: url('https://c.tenor.com/VcR3cl_TNQsAAAAM/big-floppa-mad-floppa.gif');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* Styling the title of second parallax */
+.parallax-2 h2 {
+    margin: auto;
+    position: relative;
+    left: 500px;
+    top: 300px;
+    width: 250px;
+    height: 37px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana;
+}
+
+.para-2 {
+    text-align: center;
+    padding: 25px;
+    font-size: 17px;
+    font-family: Verdana;
+    background-color: black;
+    color: white;
+}
+
+#box-left {
+    width: 50%;
+    clip-path: polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%);
+    margin-right: -4.2vh;
+    padding: 5px 7vh 5px 5px;
+    background: url('https://c.tenor.com/VcR3cl_TNQsAAAAM/big-floppa-mad-floppa.gif');
+    text-align: center;
+}
+
+#box-right {
+    width: 50%;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, calc(0% + 10vh) 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, calc(0% + 10vh) 100%);
+    margin-left: -4.2vh;
+
+    padding: 5px 5px 5px 11vh;
+    background-color: black;
+    text-align: center;
+}
+
+#landing-area {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-color: gold;
+}
