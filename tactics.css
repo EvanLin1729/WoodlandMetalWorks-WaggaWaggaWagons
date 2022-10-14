@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
+
 header {
     text-align: center;
     padding: 12px;
@@ -9,6 +11,13 @@ nav {
   width: 100%;
   background-color: white;
   overflow: auto;
+}
+
+.shaba a{
+    margin-top: 13px;
+    text-transform: uppercase;
+    font-family:'Karla';
+    font-size: 35px;
 }
 
 nav a {
@@ -23,6 +32,11 @@ nav a {
 
 nav li {
     list-style:none;
+}
+
+.brandname {
+   width:50%;
+   height:50%;
 }
 
 nav a:hover {
