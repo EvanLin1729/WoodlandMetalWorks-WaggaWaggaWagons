@@ -117,8 +117,8 @@ nav a:hover {
     width: 50%;
     clip-path: polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%);
     -webkit-clip-path: polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%);
-    margin-right: -4.2vh;
-    padding: 5px 7vh 5px 5px;
+    margin-right: 0vh;
+    padding: 5px 5px 5px 11vh;
     background: url('https://c.tenor.com/VcR3cl_TNQsAAAAM/big-floppa-mad-floppa.gif');
     text-align: center;
 }
@@ -127,9 +127,9 @@ nav a:hover {
     width: 50%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, calc(0% + 10vh) 100%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, calc(0% + 10vh) 100%);
-    margin-left: -4.2vh;
+    margin-left: 0vh;
 
-    padding: 5px 5px 5px 11vh;
+    padding: 5px 7vh 5px 5px;
     background-color: black;
     text-align: center;
 }
