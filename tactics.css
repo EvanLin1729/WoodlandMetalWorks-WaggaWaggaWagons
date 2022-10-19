@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 header {
     text-align: center;
     padding: 12px;
 }
 
+h1 {
+    font-family: 'Raleway';
+}
+
+h2 {
+    font-family: 'Raleway';
+}
+
+h4 {
+    font-family: 'Raleway';
+}
+
+p {
+    font-family: 'Raleway';
+}
 
 /* Nav Bar */
 nav {
@@ -140,3 +156,25 @@ nav a:hover {
     display: flex;
     background-color: gold;
 }
+
+
+/*
+
+Custom Icons Below: 
+Inserting Custom Symbols: <span class="material-symbols-outlined">name of thing</span>
+https://fonts.google.com/icons
+*/
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+/*
+
+Custom Icons Above
+
+*/
