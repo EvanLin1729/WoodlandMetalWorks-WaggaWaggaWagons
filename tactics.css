@@ -205,3 +205,29 @@ https://fonts.google.com/icons
 Custom Icons Above
 
 */
+
+.sliding-words-wrapper {
+  vertical-align: top;
+  display: inline-flex;
+  overflow: hidden;
+  /* set height to fit one item */
+  height: 22.4px;
+}
+
+.sliding-words {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  animation: slide-words 10s linear infinite;
+}
+
+@keyframes slide-words {
+  from {
+    top: 0;
+  }
+  to {
+    /* (Word count - 1) * 100% */
+    top: -450%;
+  }
+}
