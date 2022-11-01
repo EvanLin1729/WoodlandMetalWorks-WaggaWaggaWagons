@@ -237,11 +237,14 @@ Custom Icons Above
   filter: brightness(0%);
   animation-name: example;
   animation-duration: 100s;
+  transform: rotate(0deg);
 }
 
 @keyframes example {
   from {filter: brightness(10%);}
-  to {filter: brightness(10000%);}
+  to {filter: brightness(750%);}
+  from {transform: rotate(0deg);}
+  to {transform: rotate(18000deg);}
 }
 
 body {
