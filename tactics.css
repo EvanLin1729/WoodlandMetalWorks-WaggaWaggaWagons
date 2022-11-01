@@ -231,3 +231,27 @@ Custom Icons Above
     top: -450%;
   }
 }
+
+.jhbthegoat {
+    -webkit-filter: brightness(10%); /* Safari 6.0 - 9.0 */
+  filter: brightness(0%);
+  animation-name: example;
+  animation-duration: 100s;
+}
+
+@keyframes example {
+  from {filter: brightness(10%);}
+  to {filter: brightness(10000%);}
+}
+
+body {
+    background-color: red;
+    animation-name: example2;
+    animation-duration: 0.5s;    
+    animation-iteration-count: infinite;
+}
+
+@keyframes example2 {
+  from   {background-color: red;}
+  to  {background-color: yellow;}
+}
