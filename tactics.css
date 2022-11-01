@@ -1,6 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
+/* 
+
+Los colores que usamos. No se si les gustan, pero ahora quiero que usamos estos colores porque no tenemos otros opciones:
+Eins: #557571
+Zwei: #D49A89
+Drei: #F7D1BA
+Vier: #F4F4F4
+Usando este palete de colores: https://colorhunt.co/palette/557571d49a89f7d1baf4f4f4
+
+oder wir konnen haben
+
+Eins: #222831
+Zwei: #393E46
+Drei: #FFD369
+Vier: #EEEEEE
+Usando este palete de colores: https://colorhunt.co/palette/222831393e46ffd369eeeeee
+
+oder wir konnen haben
+
+Eins: #120136
+Zwei: #035AA6
+Drei: #40BAD5
+Vier: #FCBF1E
+Usando este palete de colores: https://colorhunt.co/palette/120136035aa640bad5fcbf1e
+
+*/
+
 header {
     text-align: center;
     padding: 12px;
