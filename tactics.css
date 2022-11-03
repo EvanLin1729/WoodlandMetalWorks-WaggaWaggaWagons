@@ -52,10 +52,16 @@ p {
 /*Nav Bar */
 
 .top-logo {
-    width: 10%;
     float: left;
+    width: 10%;
     margin-top: 20px;
 }
+
+.top-logo a {
+    position: relative;
+    z-index: 10;
+}
+
 header{
 background:#FFEB3B;
 color:#fff;
@@ -433,12 +439,7 @@ border-top: 2px solid #FF5722;
 border-bottom: 2px solid #FF5722;
 content: '';
 }
-.top-logo a img {
-    max-width: 130px;
-    width: auto;
-    padding-top: 5px;
-    padding-bottom: 10px;
-}
+
 
 #cssmenu .button:before {
 -webkit-transition: all .3s ease;
