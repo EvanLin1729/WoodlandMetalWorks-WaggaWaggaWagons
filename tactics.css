@@ -646,3 +646,56 @@ https://fonts.google.com/icons
 Custom Icons Above
 
 */
+
+.sliding-words-wrapper {
+  vertical-align: top;
+  display: inline-flex;
+  overflow: hidden;
+  /* set height to fit one item */
+  height: 22.4px;
+}
+
+.sliding-words {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  animation: slide-words 10s linear infinite;
+}
+
+@keyframes slide-words {
+  from {
+    top: 0;
+  }
+  to {
+    /* (Word count - 1) * 100% */
+    top: -450%;
+  }
+}
+
+.jhbthegoat {
+    -webkit-filter: brightness(10%); /* Safari 6.0 - 9.0 */
+  filter: brightness(0%);
+  animation-name: example;
+  animation-duration: 100s;
+  transform: rotate(0deg);
+}
+
+@keyframes example {
+  from {filter: brightness(10%);}
+  to {filter: brightness(750%);}
+  from {transform: rotate(0deg);}
+  to {transform: rotate(18000deg);}
+}
+
+body {
+    background-color: red;
+    animation-name: example2;
+    animation-duration: 0.5s;    
+    animation-iteration-count: infinite;
+}
+
+@keyframes example2 {
+  from   {background-color: red;}
+  to  {background-color: yellow;}
+}
