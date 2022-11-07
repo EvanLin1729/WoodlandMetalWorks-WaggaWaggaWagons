@@ -20,6 +20,8 @@ Usando este palete de colores: https://colorhunt.co/palette/222831393e46ffd369ee
 
 */
 
+
+
 header {
     text-align: center;
     padding: 12px;
@@ -635,6 +637,16 @@ nav#cssmenu {
     text-align: center;
 }
 
+#box-left2 {
+    width: 100%;
+    clip-path: polygon(0 0, 0 0, 0% 0%, 0 0%);
+    -webkit-clip-path: polygon(0 0, calc(100% + 1000vh) 0, 100% 100%, 0 100%);
+    margin-right: 0vh;
+    padding: 5px 5px 5px 11vh;
+    background-color: #E0DDAA;
+    text-align: center;
+}
+
 #box-right {
     width: 50%;
     clip-path: polygon(0 0, 100% 0, 100% 100%, calc(0% + 10vh) 100%);
@@ -653,6 +665,12 @@ nav#cssmenu {
     background-color: #EEEDDE;
 }
 
+#landing-area2 {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    background-color: #EEEDDE;
+}
 /*
 
 Custom Icons Below: 
@@ -940,6 +958,394 @@ Custom Icons Above
     animation-delay: 8s;
 }
 
+.bg-animated li:nth-child(15) {
+    left: left 48%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+}
+
+.bg-animated li:nth-child(16) {
+    left: 46%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 14s;
+    animation-delay: 14s;
+}
+
+.bg-animated li:nth-child(17) {
+    left: 37%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 17s;
+    animation-delay: 17s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+
+.bg-animated li:nth-child(18) {
+    left: 36%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+
+.bg-animated li:nth-child(19) {
+    left: 12%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+}
+
+.bg-animated li:nth-child(20) {
+    left: 18%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 9s;
+    animation-delay: 9s;
+    
+    -webkit-animation-duration: 28s;
+    animation-duration: 28s;
+}
+
+.bg-animated li:nth-child(21) {
+    left: 22%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay:10s;
+    animation-delay: 10s;
+    
+    -webkit-animation-duration: 16s;
+    animation-duration: 16s;
+}
+
+.bg-animated li:nth-child(22) {
+    left: 32%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+    
+    -webkit-animation-duration: 19s;
+    animation-duration: 19s;
+}
+
+.bg-animated li:nth-child(23) {
+    left: 47%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 2.5s;
+    animation-delay: 2.5s;
+}
+
+.bg-animated li:nth-child(24) {
+    left: 33%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+    
+    -webkit-animation-duration: 37s;
+    animation-duration: 37s;
+}
+
+.bg-animated li:nth-child(25) {
+    left: 53%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 14s;
+    animation-delay: 14s;
+    
+    -webkit-animation-duration: 47s;
+    animation-duration: 47s;
+}
+
+.bg-animated li:nth-child(26) {
+    left: 17%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 18s;
+    animation-delay: 18s;
+    
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+}
+
+.bg-animated li:nth-child(27) {
+    left: 10%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+}
+
+.bg-animated li:nth-child(28) {
+    left: 11%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 22s;
+    animation-delay: 22s;
+    
+    -webkit-animation-duration: 40s;
+    animation-duration: 40s;
+}
+
+.bg-animated li:nth-child(29) {
+    left: 1%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 24s;
+    animation-delay: 24s;
+    
+    -webkit-animation-duration: 12s;
+    animation-duration: 12s;
+}
+
+.bg-animated li:nth-child(30) {
+    left: 2%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+    
+    -webkit-animation-duration: 16s;
+    animation-duration: 16s;
+}
+
+.bg-animated li:nth-child(31) {
+    left: 3%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 32s;
+    animation-delay: 32s;
+}
+
+.bg-animated li:nth-child(32) {
+    left: 4%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 24s;
+    animation-delay: 24s;
+    
+    -webkit-animation-duration: 27s;
+    animation-duration: 27s;
+}
+
+.bg-animated li:nth-child(33) {
+    left: 1%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    -webkit-animation-duration: 29s;
+    animation-duration: 29s;
+}
+
+.bg-animated li:nth-child(34) {
+    left: 2%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 8.5s;
+    animation-delay: 8.5s;
+    -webkit-animation-duration: 18s;
+    animation-duration: 18s;
+}
+
+.bg-animated li:nth-child(35) {
+    left: 3%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.bg-animated li:nth-child(36) {
+    left: 4%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+}
+
+.bg-animated li:nth-child(37) {
+    left: 5%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    -webkit-animation-duration: 25s;
+    animation-duration: 25s;
+}
+
+.bg-animated li:nth-child(38) {
+    left: 6%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 11s;
+    animation-delay: 11s;
+    -webkit-animation-duration: 28s;
+    animation-duration: 28s;
+}
+
+.bg-animated li:nth-child(39) {
+    left: 8%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 14s;
+    animation-delay: 14s;
+}
+
+.bg-animated li:nth-child(40) {
+    left: 12%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 16s;
+    animation-delay: 16s;
+    -webkit-animation-duration: 30s;
+    animation-duration: 30s;
+}
+
+.bg-animated li:nth-child(41) {
+    left: 13%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 23s;
+    animation-delay: 23s;
+    -webkit-animation-duration: 23s;
+    animation-duration: 23s;
+}
+
+.bg-animated li:nth-child(42) {
+    left: 23%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+
+.bg-animated li:nth-child(43) {
+    left: 6%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 29s;
+    animation-delay: 29s;
+}
+
+.bg-animated li:nth-child(44) {
+    left: 8%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    -webkit-animation-duration: 16s;
+    animation-duration: 16s;
+}
+
+.bg-animated li:nth-child(45) {
+    left: 19%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 12.5s;
+    animation-delay: 12.5s;
+    -webkit-animation-duration: 12.5s;
+    animation-duration: 12.5s;
+}
+
+.bg-animated li:nth-child(46) {
+    left: 21%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 19s;
+    animation-delay: 19s;
+    -webkit-animation-duration: 19s;
+    animation-duration: 19s;
+}
+
+.bg-animated li:nth-child(47) {
+    left: 23%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.bg-animated li:nth-child(48) {
+    left: 25%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 17s;
+    animation-delay: 17s;
+    -webkit-animation-duration: 17s;
+    animation-duration: 17s;
+}
+
+.bg-animated li:nth-child(49) {
+    left: 27%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 16s;
+    animation-delay: 16s;
+    -webkit-animation-duration: 27s;
+    animation-duration: 27s;
+}
+
+.bg-animated li:nth-child(50) {
+    left: 35%;
+     width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 24s;
+    animation-delay: 24s;
+    -webkit-animation-durtion: 24s;
+    animation-duration: 24s;
+}
+
 .animatedab-outer {
     position: fixed;
     top: 0;
@@ -1141,3 +1547,38 @@ Custom Icons Above
         opacity: 0;
     }
 }
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
