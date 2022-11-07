@@ -18,14 +18,6 @@ Drei: #FFD369
 Vier: #EEEEEE
 Usando este palete de colores: https://colorhunt.co/palette/222831393e46ffd369eeeeee
 
-oder wir konnen haben
-
-Eins: #120136
-Zwei: #035AA6
-Drei: #40BAD5
-Vier: #FCBF1E
-Usando este palete de colores: https://colorhunt.co/palette/120136035aa640bad5fcbf1e
-
 */
 
 header {
@@ -63,7 +55,7 @@ p {
 }
 
 header {
-    background: #FFEB3B;
+    background: #EEEDDE;
     color: #fff;
 }
 
@@ -570,23 +562,12 @@ nav#cssmenu {
 .parallax-1 {
     width: 100%;
     height: 600px;
-    background: url('https://media.tenor.com/images/0ebcae36d59242c0f372f40a7ae6c3f2/tenor.gif');
+    background: url(TacoShack/edgar.png);
     background-size: 100% 100%;
     background-attachment: fixed;
 }
 
-.parallax-1 h2 {
-    margin: auto;
-    position: relative;
-    left: 500px;
-    top: 300px;
-    width: 250px;
-    height: 32px;
-    padding: 10px;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
+
 
 .para-1 {
     padding: 50px;
@@ -620,13 +601,19 @@ nav#cssmenu {
 }
 
 .para-2 {
-    text-align: center;
-    height: 1000px;
+
+    height: 450;
     padding: 25px;
     font-size: 17px;
     font-family: Verdana;
-    background-color: #FFD369;
+    background: #EEEDDE;
     color: white;
+}
+
+.para-2 img {
+
+    padding-left: 30vh;
+
 }
 
 .para-3 {
@@ -644,7 +631,7 @@ nav#cssmenu {
     -webkit-clip-path: polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%);
     margin-right: 0vh;
     padding: 5px 5px 5px 11vh;
-    background-color: #FFD369;
+    background-color: #E0DDAA;
     text-align: center;
 }
 
@@ -655,7 +642,7 @@ nav#cssmenu {
     margin-left: 0vh;
 
     padding: 5px 7vh 5px 5px;
-    background-color: black;
+    background-color: #203239;
     text-align: center;
 }
 
@@ -663,9 +650,8 @@ nav#cssmenu {
     width: 100vw;
     height: 85vh;
     display: flex;
-    background-color: gold;
+    background-color: #EEEDDE;
 }
-
 
 /*
 
@@ -742,22 +728,7 @@ Custom Icons Above
     }
 }
 
-body {
-    background-color: red;
-    animation-name: example2;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-}
 
-@keyframes example2 {
-    <<<<<<< HEAD from {
-        background-color: red;
-    }
-
-    to {
-        background-color: yellow;
-    }
-}
 
 @keyframes bganimation {
     0% {
@@ -1170,14 +1141,3 @@ body {
         opacity: 0;
     }
 }
-
-=======from {
-    background-color: red;
-}
-
-to {
-    background-color: yellow;
-}
-}
-
->>>>>>>refs/remotes/origin/main
