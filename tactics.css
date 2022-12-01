@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 /* 
 
 Los colores que usamos. No se si les gustan, pero ahora quiero que usamos estos colores porque no tenemos otros opciones:
@@ -15,12 +15,13 @@ oder wir konnen haben
 Eins: #222831
 Zwei: #393E46
 Drei: #FFD369
-Vier: #EEEEEE
+Vier: #EEEEEE0
 Usando este palete de colores: https://colorhunt.co/palette/222831393e46ffd369eeeeee
+
 
 */
 
-
+body {}
 
 header {
     text-align: center;
@@ -48,7 +49,7 @@ p {
 .top-logo {
     float: left;
     width: 10%;
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 .top-logo a {
@@ -57,8 +58,8 @@ p {
 }
 
 header {
-    background: #EEEDDE;
-    color: #fff;
+    background-color: #000000;
+    color: black;
 }
 
 #cssmenu,
@@ -117,7 +118,7 @@ nav#cssmenu {
     display: inline-block;
     align-items: center;
     padding-top: 2rem;
-    padding-left: 5rem;
+    padding-left: 2rem;
     padding-right: 5rem;
     padding-bottom: 2rem;
 }
@@ -127,9 +128,10 @@ nav#cssmenu {
     font-size: 14px;
     letter-spacing: 0.7px;
     text-decoration: none;
-    color: #333;
+    color: rgb(255,215,0);
     font-weight: 500;
     text-transform: uppercase;
+
 }
 
 .navigation.sticky.scrolling #cssmenu>ul>li>a {
@@ -143,7 +145,8 @@ nav#cssmenu {
 #cssmenu>ul>li:hover>a,
 #cssmenu>ul>li:hover>a,
 #cssmenu ul li.active a {
-    color: #E91E63;
+    color: white;
+    /* adjust hover color */
 }
 
 #cssmenu>ul>li:hover,
@@ -318,6 +321,10 @@ nav#cssmenu {
     .logo {
         max-width: 220px;
         margin-left: 15px;
+    }
+
+    .top-logo {
+        margin-bottom: 10px;
     }
 
     .logo2 {
@@ -563,27 +570,100 @@ nav#cssmenu {
 /* Styling the title of second parallax */
 .parallax-1 {
     width: 100%;
-    height: 600px;
+    height: 800px;
     background: url(TacoShack/edgar.png);
-    background-size: 100% 100%;
+    background-size: cover;
+    filter:brightness(60%);
     background-attachment: fixed;
 }
 
+@media (max-width:768px){
+    .parallax-1 {
+        width: 100%;
+        height: 300px;
+        background-color: #CCCCD9;
+        background: #CCCCD9;
+        opacity: 0.7;
+        background-size: cover;
+        filter:brightness(60%);
+        background-attachment: fixed;
+    }
+}
 
+.col-sm-6 h1 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+.col-sm-6 h3 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+.col-sm-4 h3 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+.col-sm-12 h3 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+}
+
+.col-sm-6 img {
+    border-radius: 50px;
+    
+}
 
 .para-1 {
     padding: 50px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     font-size: 17px;
 }
 
+
 .parallax-2 {
     width: 100%;
-    height: 600px;
-    background: url('https://c.tenor.com/VcR3cl_TNQsAAAAM/big-floppa-mad-floppa.gif');
-    background-size: 100% 100%;
+    height: 800px;
+    background: url(TacoShack/Full_Axe.jpg);
+    filter:brightness(60%);
+    background-size: cover;
     background-attachment: fixed;
+}
+
+@media (max-width:768px){
+.parallax-2 {
+    width: 100%;
+    height: 300px;
+    background-color: #CCCCD9;
+    opacity: 0.7;
+    background: #CCCCD9;
+    filter:brightness(60%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+}
+
+.parallax-3 {
+    width: 100%;
+    height: 800px;
+    background: url(TacoShack/IMG_9966.jpg);
+    filter:brightness(60%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media (max-width:768px){
+    .parallax-3 {
+    width: 100%;
+    height: 300px;
+    background-color: #CCCCD9;
+    background: #CCCCD9;
+    opacity: 0.7;
+    filter:brightness(60%);
+    background-size: cover;
+    background-attachment: fixed;
+}
 }
 
 /* Styling the title of second parallax */
@@ -608,7 +688,7 @@ nav#cssmenu {
     padding: 25px;
     font-size: 17px;
     font-family: Verdana;
-    background: #EEEDDE;
+    background: white;
     color: white;
 }
 
@@ -627,24 +707,48 @@ nav#cssmenu {
     color: white;
 }
 
+.para-4 {
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    font-family: Verdana;
+    background-color: gold;
+    color: black;
+}
+
+.para-5 {
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+    font-family: Verdana;
+    background-color: black;
+    color: white;
+}
+
 #box-left {
     width: 50%;
     clip-path: polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%);
     -webkit-clip-path: polygon(0 0, calc(100% - 10vh) 0, 100% 100%, 0 100%);
     margin-right: 0vh;
     padding: 5px 5px 5px 11vh;
-    background-color: #E0DDAA;
+    background: radial-gradient(circle, rgba(177,170,91,1) 22%, rgba(226,217,136,1) 83%);
+
+    background-color: #D49B54;
     text-align: center;
 }
 
+#box-left2 img {
+    padding-top: 30vh;
+}
 #box-left2 {
     width: 100%;
     clip-path: polygon(0 0, 0 0, 0% 0%, 0 0%);
     -webkit-clip-path: polygon(0 0, calc(100% + 1000vh) 0, 100% 100%, 0 100%);
     margin-right: 0vh;
     padding: 5px 5px 5px 11vh;
-    background-color: #E0DDAA;
+   background: radial-gradient(circle, rgba(226,217,136,1) 13%, rgba(159,153,79,1) 73%);
     text-align: center;
+
 }
 
 #box-right {
@@ -654,15 +758,70 @@ nav#cssmenu {
     margin-left: 0vh;
 
     padding: 5px 7vh 5px 5px;
-    background-color: #203239;
-    text-align: center;
+    background-color: #FAF7F0;
+   text-align: center;
+   
+   
+}
+
+#box-right h1 {
+    padding-top: 23.5vh;
+    padding-bottom: 23.5vh;
+
+}
+
+.slide-right {
+  width: 100%;
+  overflow: hidden;
+  margin-left: 400px;
+  max-width: 5000px
+}
+
+.slide-right h1 {
+  animation: 10s slide-right;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    margin-left: -500px;
+  }
+  
+  50% {
+    opacity: 0.3;
+  }
+  
+  75% {
+    opacity: 1.0;
+    margin-left: 0%;
+  }
+  
+  100% {
+    margin-left: 500px;
+    opacity: 0.0;
+  }
 }
 
 #landing-area {
-    width: 100vw;
+    width: 98.5vw;
     height: 85vh;
     display: flex;
-    background-color: #EEEDDE;
+    background-color: #282A3A;
+
+}
+
+@media (max-width:1000px){
+    #landing-area {
+        width:98.0vw;
+    }
+}
+
+@media (min-width:1001px){
+    #landing-area {
+        width:99.25vw;
+    }
 }
 
 #landing-area2 {
@@ -671,6 +830,7 @@ nav#cssmenu {
     display: flex;
     background-color: #EEEDDE;
 }
+
 /*
 
 Custom Icons Below: 
@@ -718,34 +878,6 @@ Custom Icons Above
         top: -450%;
     }
 }
-
-.jhbthegoat {
-    -webkit-filter: brightness(10%);
-    /* Safari 6.0 - 9.0 */
-    filter: brightness(0%);
-    animation-name: example;
-    animation-duration: 100s;
-    transform: rotate(0deg);
-}
-
-@keyframes example {
-    from {
-        filter: brightness(10%);
-    }
-
-    to {
-        filter: brightness(750%);
-    }
-
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(18000deg);
-    }
-}
-
 
 
 @keyframes bganimation {
@@ -808,7 +940,7 @@ Custom Icons Above
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: -1;
 }
 
 .bg-animated li {
@@ -831,23 +963,23 @@ Custom Icons Above
     width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
-    
+
 }
 
 .bg-animated li:nth-child(2) {
     left: 8%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 22s;
+    animation-delay: 32s;
     -webkit-animation-duration: 15s;
     animation-duration: 15s;
 }
 
 .bg-animated li:nth-child(3) {
     left: 12%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 4s;
@@ -856,24 +988,24 @@ Custom Icons Above
 
 .bg-animated li:nth-child(4) {
     left: 16%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/sign.png);
     -webkit-animation-duration: 20s;
     animation-duration: 20s;
 }
 
 .bg-animated li:nth-child(5) {
     left: 20%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
-   
+
 }
 
 .bg-animated li:nth-child(6) {
     left: 24%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 3s;
@@ -882,7 +1014,7 @@ Custom Icons Above
 
 .bg-animated li:nth-child(7) {
     left: 20%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 15s;
@@ -893,7 +1025,7 @@ Custom Icons Above
 
 .bg-animated li:nth-child(8) {
     left: 28%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 15s;
@@ -904,7 +1036,7 @@ Custom Icons Above
 
 .bg-animated li:nth-child(9) {
     left: 32%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 2s;
@@ -915,7 +1047,7 @@ Custom Icons Above
 
 .bg-animated li:nth-child(10) {
     left: 36%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 10s;
@@ -924,16 +1056,16 @@ Custom Icons Above
 
 .bg-animated li:nth-child(11) {
     left: 40%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/sign.png);
     -webkit-animation-delay: 7s;
     animation-delay: 7s;
 }
 
 .bg-animated li:nth-child(12) {
     left: 44%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 8s;
@@ -942,7 +1074,7 @@ Custom Icons Above
 
 .bg-animated li:nth-child(13) {
     left: 48%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 4s;
@@ -951,7 +1083,7 @@ Custom Icons Above
 
 .bg-animated li:nth-child(14) {
     left: 52%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 8s;
@@ -960,7 +1092,7 @@ Custom Icons Above
 
 .bg-animated li:nth-child(15) {
     left: left 48%;
-     width: 200px;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 6s;
@@ -971,18 +1103,18 @@ Custom Icons Above
 
 .bg-animated li:nth-child(16) {
     left: 46%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/sign.png);
     -webkit-animation-delay: 14s;
     animation-delay: 14s;
 }
 
 .bg-animated li:nth-child(17) {
     left: 37%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 17s;
     animation-delay: 17s;
     -webkit-animation-duration: 20s;
@@ -990,10 +1122,10 @@ Custom Icons Above
 }
 
 .bg-animated li:nth-child(18) {
-    left: 36%;
-     width: 200px;
+    left: 69%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
     -webkit-animation-duration: 20s;
@@ -1001,166 +1133,166 @@ Custom Icons Above
 }
 
 .bg-animated li:nth-child(19) {
-    left: 12%;
-     width: 200px;
+    left: 60%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 7s;
     animation-delay: 7s;
 }
 
 .bg-animated li:nth-child(20) {
-    left: 18%;
-     width: 200px;
+    left: 77%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/sign.png);
     -webkit-animation-delay: 9s;
     animation-delay: 9s;
-    
+
     -webkit-animation-duration: 28s;
     animation-duration: 28s;
 }
 
 .bg-animated li:nth-child(21) {
-    left: 22%;
-     width: 200px;
+    left: 99%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
-    -webkit-animation-delay:10s;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 10s;
     animation-delay: 10s;
-    
+
     -webkit-animation-duration: 16s;
     animation-duration: 16s;
 }
 
 .bg-animated li:nth-child(22) {
-    left: 32%;
-     width: 200px;
+    left: 54%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 5s;
     animation-delay: 5s;
-    
+
     -webkit-animation-duration: 19s;
     animation-duration: 19s;
 }
 
 .bg-animated li:nth-child(23) {
-    left: 47%;
-     width: 200px;
+    left: 64%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 2.5s;
     animation-delay: 2.5s;
 }
 
 .bg-animated li:nth-child(24) {
-    left: 33%;
-     width: 200px;
+    left: 80%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 12s;
     animation-delay: 12s;
-    
+
     -webkit-animation-duration: 37s;
     animation-duration: 37s;
 }
 
 .bg-animated li:nth-child(25) {
-    left: 53%;
-     width: 200px;
+    left: 85%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 14s;
     animation-delay: 14s;
-    
+
     -webkit-animation-duration: 47s;
     animation-duration: 47s;
 }
 
 .bg-animated li:nth-child(26) {
-    left: 17%;
-     width: 200px;
+    left: 87%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/sign.png);
     -webkit-animation-delay: 18s;
     animation-delay: 18s;
-    
+
     -webkit-animation-duration: 10s;
     animation-duration: 10s;
 }
 
 .bg-animated li:nth-child(27) {
-    left: 10%;
-     width: 200px;
+    left: 92%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 20s;
     animation-delay: 20s;
 }
 
 .bg-animated li:nth-child(28) {
-    left: 11%;
-     width: 200px;
+    left: 49%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 22s;
     animation-delay: 22s;
-    
+
     -webkit-animation-duration: 40s;
     animation-duration: 40s;
 }
 
 .bg-animated li:nth-child(29) {
     left: 1%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/sign.png);
     -webkit-animation-delay: 24s;
     animation-delay: 24s;
-    
+
     -webkit-animation-duration: 12s;
     animation-duration: 12s;
 }
 
 .bg-animated li:nth-child(30) {
-    left: 2%;
-     width: 200px;
+    left: 66%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
-    
+
     -webkit-animation-duration: 16s;
     animation-duration: 16s;
 }
 
 .bg-animated li:nth-child(31) {
-    left: 3%;
-     width: 200px;
+    left: 56%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 32s;
     animation-delay: 32s;
 }
 
 .bg-animated li:nth-child(32) {
-    left: 4%;
-     width: 200px;
+    left: 78%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 24s;
     animation-delay: 24s;
-    
+
     -webkit-animation-duration: 27s;
     animation-duration: 27s;
 }
 
 .bg-animated li:nth-child(33) {
-    left: 1%;
-     width: 200px;
+    left: 42%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 8s;
     animation-delay: 8s;
     -webkit-animation-duration: 29s;
@@ -1168,10 +1300,10 @@ Custom Icons Above
 }
 
 .bg-animated li:nth-child(34) {
-    left: 2%;
-     width: 200px;
+    left: 69%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/sign.png);
     -webkit-animation-delay: 8.5s;
     animation-delay: 8.5s;
     -webkit-animation-duration: 18s;
@@ -1180,18 +1312,18 @@ Custom Icons Above
 
 .bg-animated li:nth-child(35) {
     left: 3%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
 }
 
 .bg-animated li:nth-child(36) {
     left: 4%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
     -webkit-animation-duration: 30s;
@@ -1199,10 +1331,10 @@ Custom Icons Above
 }
 
 .bg-animated li:nth-child(37) {
-    left: 5%;
-     width: 200px;
+    left: 59%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 6s;
     animation-delay: 6s;
     -webkit-animation-duration: 25s;
@@ -1210,10 +1342,10 @@ Custom Icons Above
 }
 
 .bg-animated li:nth-child(38) {
-    left: 6%;
-     width: 200px;
+    left: 89%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 11s;
     animation-delay: 11s;
     -webkit-animation-duration: 28s;
@@ -1221,19 +1353,19 @@ Custom Icons Above
 }
 
 .bg-animated li:nth-child(39) {
-    left: 8%;
-     width: 200px;
+    left: 77%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 14s;
     animation-delay: 14s;
 }
 
 .bg-animated li:nth-child(40) {
-    left: 12%;
-     width: 200px;
+    left: 72%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 16s;
     animation-delay: 16s;
     -webkit-animation-duration: 30s;
@@ -1241,10 +1373,10 @@ Custom Icons Above
 }
 
 .bg-animated li:nth-child(41) {
-    left: 13%;
-     width: 200px;
+    left: 76%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 23s;
     animation-delay: 23s;
     -webkit-animation-duration: 23s;
@@ -1253,9 +1385,9 @@ Custom Icons Above
 
 .bg-animated li:nth-child(42) {
     left: 23%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/sign.png);
     -webkit-animation-delay: 20s;
     animation-delay: 20s;
     -webkit-animation-duration: 20s;
@@ -1264,18 +1396,18 @@ Custom Icons Above
 
 .bg-animated li:nth-child(43) {
     left: 6%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 29s;
     animation-delay: 29s;
 }
 
 .bg-animated li:nth-child(44) {
     left: 8%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 8s;
     animation-delay: 8s;
     -webkit-animation-duration: 16s;
@@ -1284,9 +1416,9 @@ Custom Icons Above
 
 .bg-animated li:nth-child(45) {
     left: 19%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 12.5s;
     animation-delay: 12.5s;
     -webkit-animation-duration: 12.5s;
@@ -1295,9 +1427,9 @@ Custom Icons Above
 
 .bg-animated li:nth-child(46) {
     left: 21%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/sign.png);
     -webkit-animation-delay: 19s;
     animation-delay: 19s;
     -webkit-animation-duration: 19s;
@@ -1305,19 +1437,19 @@ Custom Icons Above
 }
 
 .bg-animated li:nth-child(47) {
-    left: 23%;
-     width: 200px;
+    left: 99%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 3s;
-    animation-delay: 3s;
+    animation-delay: 10s;
 }
 
 .bg-animated li:nth-child(48) {
-    left: 25%;
-     width: 200px;
+    left: 88%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/sign.png);
     -webkit-animation-delay: 17s;
     animation-delay: 17s;
     -webkit-animation-duration: 17s;
@@ -1325,8 +1457,8 @@ Custom Icons Above
 }
 
 .bg-animated li:nth-child(49) {
-    left: 27%;
-     width: 200px;
+    left:67%;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 16s;
@@ -1336,15 +1468,291 @@ Custom Icons Above
 }
 
 .bg-animated li:nth-child(50) {
-    left: 35%;
-     width: 200px;
+    left: 69%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 23s;
+    animation-delay: 14s;
+    -webkit-animation-durtion: 32s;
+    animation-duration: 26s;
+}
+
+.bg-animated li:nth-child(51) {
+    left: 65%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 40s;
+    animation-delay: 40s;
+    -webkit-animation-durtion: 26s;
+    animation-duration: 22s;
+}
+
+.bg-animated li:nth-child(52) {
+    left: 87%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 15s;
+    animation-delay: 26s;
+    -webkit-animation-durtion: 20s;
+    animation-duration: 18s;
+}
+
+.bg-animated li:nth-child(53) {
+    left: 78%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 22s;
+    animation-delay: 32s;
+    -webkit-animation-durtion: 18s;
+    animation-duration: 15s;
+}
+
+.bg-animated li:nth-child(54) {
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 29s;
+    animation-delay: 12s;
+    -webkit-animation-durtion: 33s;
+    animation-duration: 15s;
+}
+
+.bg-animated li:nth-child(55) {
+    left: 47%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 32s;
+    animation-delay: 13s;
+    -webkit-animation-durtion: 22s;
+    animation-duration: 11s;
+}
+
+.bg-animated li:nth-child(56) {
+    left: 52%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 32s;
+    animation-delay: 24s;
+    -webkit-animation-durtion: 15s;
+    animation-duration: 7s;
+}
+
+.bg-animated li:nth-child(57) {
+    left: 44%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 17s;
+    animation-delay: 32s;
+    -webkit-animation-durtion: 26s;
+    animation-duration: 10s;
+}
+
+.bg-animated li:nth-child(58) {
+    left: 48%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 32s;
+    animation-delay: 4s;
+    -webkit-animation-durtion: 32s;
+    animation-duration: 25s;
+}
+
+.bg-animated li:nth-child(59) {
+    left: 52%;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 24s;
-    animation-delay: 24s;
-    -webkit-animation-durtion: 24s;
+    animation-delay: 16s;
+    -webkit-animation-durtion:26s;
+    animation-duration: 17s;
+}
+
+.bg-animated li:nth-child(60) {
+    left: 56%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 24s;
+    animation-delay: 27s;
+    -webkit-animation-durtion: 17s;
+    animation-duration: 15s;
+}
+
+.bg-animated li:nth-child(61) {
+    left: 60%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 26s;
+    animation-delay: 27s;
+    -webkit-animation-durtion: 18s;
+    animation-duration: 25s;
+}
+
+.bg-animated li:nth-child(62) {
+    left: 64%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 22s;
+    animation-delay: 35s;
+    -webkit-animation-durtion: 18s;
+    animation-duration: 15s;
+}
+
+.bg-animated li:nth-child(63) {
+    left: 68%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 17s;
+    animation-delay: 33s;
+    -webkit-animation-durtion: 36s;
+    animation-duration: 25s;
+}
+
+.bg-animated li:nth-child(64) {
+    left: 72%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 28s;
+    animation-delay: 36s;
+    -webkit-animation-durtion: 18s;
+    animation-duration: 16s;
+}
+
+.bg-animated li:nth-child(65) {
+    left: 76%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 18s;
+    animation-delay: 17s;
+    -webkit-animation-durtion: 12s;
+    animation-duration: 32s;
+}
+
+.bg-animated li:nth-child(66) {
+    left: 80%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 12s;
+    animation-delay: 33s;
+    -webkit-animation-durtion: 21s;
+    animation-duration: 23s;
+}
+
+.bg-animated li:nth-child(67) {
+    left: 84%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 24s;
+    animation-delay: 15s;
+    -webkit-animation-durtion: 10s;
+    animation-duration: 10s;
+}
+
+.bg-animated li:nth-child(68) {
+    left: 88%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 16s;
+    animation-delay: 21s;
+    -webkit-animation-durtion: 26s;
+    animation-duration: 35s;
+}
+
+.bg-animated li:nth-child(69) {
+    left: 92%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 26s;
+    animation-delay: 17s;
+    -webkit-animation-durtion: 15s;
+    animation-duration: 34s;
+}
+
+.bg-animated li:nth-child(70) {
+    left: 96%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 36s;
+    animation-delay: 17s;
+    -webkit-animation-durtion: 23s;
+    animation-duration: 17s;
+}
+
+.bg-animated li:nth-child(71) {
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 19s;
+    animation-delay: 32s;
+    -webkit-animation-durtion: 29s;
+    animation-duration: 13s;
+}
+
+.bg-animated li:nth-child(72) {
+    left: 51%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 23s;
+    animation-delay: 37s;
+    -webkit-animation-durtion: 16s;
+    animation-duration: 16s;
+}
+
+.bg-animated li:nth-child(73) {
+    left: 49%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 18s;
+    animation-delay: 17s;
+    -webkit-animation-durtion: 36s;
     animation-duration: 24s;
 }
+
+.bg-animated li:nth-child(74) {
+    left: 53%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 27s;
+    animation-delay: 16s;
+    -webkit-animation-durtion: 18s;
+    animation-duration: 35s;
+}
+
+.bg-animated li:nth-child(75) {
+    left: 47%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 40s;
+    animation-delay: 40s;
+    -webkit-animation-durtion: 40s;
+    animation-duration: 40s;
+}
+
 
 .animatedab-outer {
     position: fixed;
@@ -1371,7 +1779,6 @@ Custom Icons Above
     display: block;
     width: 40px;
     height: 40px;
-    background-image: url(TacoShack/bearp2.png);
     bottom: 50px;
     animation: square 25s infinite;
     -webkit-animation: square 25s infinite;
@@ -1384,15 +1791,15 @@ Custom Icons Above
     left: 0%;
     width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
-    
+    background-image: url(TacoShack/axe.png);
+
 }
 
 .ab-animated li:nth-child(2) {
-    left: 8%;
-     width: 200px;
+    left: 4%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
     -webkit-animation-duration: 15s;
@@ -1400,45 +1807,45 @@ Custom Icons Above
 }
 
 .ab-animated li:nth-child(3) {
-    left: 12%;
-     width: 200px;
+    left: 8%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 4s;
     animation-delay: 4s;
 }
 
 .ab-animated li:nth-child(4) {
-    left: 16%;
-     width: 200px;
+    left: 12%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-duration: 20s;
     animation-duration: 20s;
 }
 
 .ab-animated li:nth-child(5) {
-    left: 20%;
-     width: 200px;
+    left: 16%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
-   
+    background-image: url(TacoShack/axe.png);
+
 }
 
 .ab-animated li:nth-child(6) {
-    left: 24%;
-     width: 200px;
+    left: 20%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
 }
 
 .ab-animated li:nth-child(7) {
-    left: 20%;
-     width: 200px;
+    left: 24%;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 15s;
     animation-delay: 15s;
     -webkit-animation-duration: 40s;
@@ -1447,9 +1854,9 @@ Custom Icons Above
 
 .ab-animated li:nth-child(8) {
     left: 28%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 15s;
     animation-delay: 15s;
     -webkit-animation-duration: 40s;
@@ -1458,9 +1865,9 @@ Custom Icons Above
 
 .ab-animated li:nth-child(9) {
     left: 32%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 2s;
     animation-delay: 2s;
     -webkit-animation-duration: 40s;
@@ -1469,47 +1876,708 @@ Custom Icons Above
 
 .ab-animated li:nth-child(10) {
     left: 36%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 10s;
-    animation-delay: 10s;
+    animation-delay: 6s;
 }
 
 .ab-animated li:nth-child(11) {
     left: 40%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 7s;
-    animation-delay: 7s;
+    animation-delay: 3s;
 }
 
 .ab-animated li:nth-child(12) {
     left: 44%;
-     width: 200px;
+    width: 200px;
     height: 200px;
-    background-image: url(TacoShack/doggy.png);
+    background-image: url(TacoShack/axe.png);
     -webkit-animation-delay: 8s;
-    animation-delay: 8s;
+    animation-delay: 5s;
 }
 
 .ab-animated li:nth-child(13) {
     left: 48%;
-     width: 200px;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 6s;
+}
+
+.ab-animated li:nth-child(14) {
+    left: 52%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 5s;
+    animation-delay: 3s;
+}
+
+.ab-animated li:nth-child(15) {
+    left: 56%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 2s;
+    animation-delay: 4s;
+}
+
+.ab-animated li:nth-child(16) {
+    left: 60%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 5s;
+    animation-delay: 8s;
+}
+
+.ab-animated li:nth-child(17) {
+    left: 64%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 3s;
+}
+
+.ab-animated li:nth-child(18) {
+    left: 68%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 7s;
+    animation-delay: 6s;
+}
+
+.ab-animated li:nth-child(19) {
+    left: 72%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 2s;
+}
+
+.ab-animated li:nth-child(20) {
+    left: 76%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 3s;
+    animation-delay: 4s;
+}
+
+.ab-animated li:nth-child(21) {
+    left: 80%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.ab-animated li:nth-child(22) {
+    left: 84%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 2s;
+    animation-delay: 3s;
+}
+
+.ab-animated li:nth-child(23) {
+    left: 88%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 5s;
+    animation-delay: 7s;
+}
+
+.ab-animated li:nth-child(24) {
+    left: 92%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 7s;
+    animation-delay: 5s;
+}
+
+.ab-animated li:nth-child(25) {
+    left: 96%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 6s;
+}
+
+.ab-animated li:nth-child(26) {
+    left: 100%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/axe.png);
+    -webkit-animation-delay: 6s;
+    animation-delay: 3s;
+}
+
+
+
+
+.animatedqr-outer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.qr-animated {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.qr-animated li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    animation: square 25s infinite;
+    -webkit-animation: square 25s infinite;
+    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    opacity: 0;
+}
+
+.qr-animated li:nth-child(1) {
+    left: 0%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+
+}
+
+.qr-animated li:nth-child(2) {
+    left: 4%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+}
+
+.qr-animated li:nth-child(3) {
+    left: 8%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+}
+
+.qr-animated li:nth-child(4) {
+    left: 12%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+
+.qr-animated li:nth-child(5) {
+    left: 16%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+
+}
+
+.qr-animated li:nth-child(6) {
+    left: 20%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.qr-animated li:nth-child(7) {
+    left: 24%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+    -webkit-animation-duration: 40s;
+    animation-duration: 40s;
+}
+
+.qr-animated li:nth-child(8) {
+    left: 28%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+    -webkit-animation-duration: 40s;
+    animation-duration: 40s;
+}
+
+.qr-animated li:nth-child(9) {
+    left: 32%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 40s;
+    animation-duration: 40s;
+}
+
+.qr-animated li:nth-child(10) {
+    left: 36%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 10s;
+    animation-delay: 6s;
+}
+
+.qr-animated li:nth-child(11) {
+    left: 40%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 7s;
+    animation-delay: 3s;
+}
+
+.qr-animated li:nth-child(12) {
+    left: 44%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 8s;
+    animation-delay: 5s;
+}
+
+.qr-animated li:nth-child(13) {
+    left: 48%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 6s;
+}
+
+.qr-animated li:nth-child(14) {
+    left: 52%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 5s;
+    animation-delay: 3s;
+}
+
+.qr-animated li:nth-child(15) {
+    left: 56%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 2s;
+    animation-delay: 4s;
+}
+
+.qr-animated li:nth-child(16) {
+    left: 60%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 5s;
+    animation-delay: 8s;
+}
+
+.qr-animated li:nth-child(17) {
+    left: 64%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 3s;
+}
+
+.qr-animated li:nth-child(18) {
+    left: 68%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 7s;
+    animation-delay: 6s;
+}
+
+.qr-animated li:nth-child(19) {
+    left: 72%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 2s;
+}
+
+.qr-animated li:nth-child(20) {
+    left: 76%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 3s;
+    animation-delay: 4s;
+}
+
+.qr-animated li:nth-child(21) {
+    left: 80%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.qr-animated li:nth-child(22) {
+    left: 84%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 2s;
+    animation-delay: 3s;
+}
+
+.qr-animated li:nth-child(23) {
+    left: 88%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 5s;
+    animation-delay: 7s;
+}
+
+.qr-animated li:nth-child(24) {
+    left: 92%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 7s;
+    animation-delay: 5s;
+}
+
+.qr-animated li:nth-child(25) {
+    left: 96%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 6s;
+}
+
+.qr-animated li:nth-child(26) {
+    left: 100%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/sign.png);
+    -webkit-animation-delay: 6s;
+    animation-delay: 3s;
+}
+
+
+
+
+
+.animatedtb-outer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.tb-animated {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.tb-animated li {
+    position: absolute;
+    list-style: none;
+    display: block;
+    width: 40px;
+    height: 40px;
+    bottom: 50px;
+    animation: square 25s infinite;
+    -webkit-animation: square 25s infinite;
+    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    opacity: 0;
+}
+
+.tb-animated li:nth-child(1) {
+    left: 0%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+
+}
+
+.tb-animated li:nth-child(2) {
+    left: 4%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 15s;
+    animation-duration: 15s;
+}
+
+.tb-animated li:nth-child(3) {
+    left: 8%;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 4s;
     animation-delay: 4s;
 }
 
-.ab-animated li:nth-child(14) {
-    left: 52%;
-     width: 200px;
+.tb-animated li:nth-child(4) {
+    left: 12%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
+}
+
+.tb-animated li:nth-child(5) {
+    left: 16%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+
+}
+
+.tb-animated li:nth-child(6) {
+    left: 20%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
+}
+
+.tb-animated li:nth-child(7) {
+    left: 24%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+    -webkit-animation-duration: 40s;
+    animation-duration: 40s;
+}
+
+.tb-animated li:nth-child(8) {
+    left: 28%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+    -webkit-animation-duration: 40s;
+    animation-duration: 40s;
+}
+
+.tb-animated li:nth-child(9) {
+    left: 32%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    -webkit-animation-duration: 40s;
+    animation-duration: 40s;
+}
+
+.tb-animated li:nth-child(10) {
+    left: 36%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 10s;
+    animation-delay: 6s;
+}
+
+.tb-animated li:nth-child(11) {
+    left: 40%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 7s;
+    animation-delay: 3s;
+}
+
+.tb-animated li:nth-child(12) {
+    left: 44%;
+    width: 200px;
     height: 200px;
     background-image: url(TacoShack/doggy.png);
     -webkit-animation-delay: 8s;
+    animation-delay: 5s;
+}
+
+.tb-animated li:nth-child(13) {
+    left: 48%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 6s;
+}
+
+.tb-animated li:nth-child(14) {
+    left: 52%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 5s;
+    animation-delay: 3s;
+}
+
+.tb-animated li:nth-child(15) {
+    left: 56%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 2s;
+    animation-delay: 4s;
+}
+
+.tb-animated li:nth-child(16) {
+    left: 60%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 5s;
     animation-delay: 8s;
+}
+
+.tb-animated li:nth-child(17) {
+    left: 64%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 3s;
+}
+
+.tb-animated li:nth-child(18) {
+    left: 68%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 7s;
+    animation-delay: 6s;
+}
+
+.tb-animated li:nth-child(19) {
+    left: 72%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 2s;
+}
+
+.tb-animated li:nth-child(20) {
+    left: 76%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 3s;
+    animation-delay: 4s;
+}
+
+.tb-animated li:nth-child(21) {
+    left: 80%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.tb-animated li:nth-child(22) {
+    left: 84%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 2s;
+    animation-delay: 3s;
+}
+
+.tb-animated li:nth-child(23) {
+    left: 88%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 5s;
+    animation-delay: 7s;
+}
+
+.tb-animated li:nth-child(24) {
+    left: 92%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 7s;
+    animation-delay: 5s;
+}
+
+.tb-animated li:nth-child(25) {
+    left: 96%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 4s;
+    animation-delay: 6s;
+}
+
+.tb-animated li:nth-child(26) {
+    left: 100%;
+    width: 200px;
+    height: 200px;
+    background-image: url(TacoShack/doggy.png);
+    -webkit-animation-delay: 6s;
+    animation-delay: 3s;
 }
 
 @keyframes square {
@@ -1548,37 +2616,419 @@ Custom Icons Above
     }
 }
 
-.dropbtn {
-  background-color: #04AA6D;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+
+/* Footer */
+
+footer {
+    background-color: #000000;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+footer .social {
+    background-color: rgb(255,215,0);
+    text-shadow: 5px 5px white blur(5px);
 }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+footer hr {
+    width: 60px;
+    background-color: rgb(255,215,0);
+    height: 2px
+}
+
+footer .bottom {
+    background-color: black;
+}
+
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: rgb(255,215,0);
+}
+
+footer img {
+    width: 10%;
+}
+
+.me-10 {
+    color: black;
+    font-weight: bolder;
+}
+/*footer .pad{
+    padding-right: 450px;
+} */
+
+/*Footer*/
+
+
+.btn-primary {
+    background-color: rgb(255,215,0);
+    border-color: rgb(255,215,0);
+}
+
+.btn-primary:hover {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+@media (max-width:1200px){
+    .home-width-height{
+        width: 187.5px;
+        height: 270.5px;
+    }
+}
+@media (min-width:1201px){
+    .home-width-height{
+        width: 325px;
+        height: 450px;
+    }
+}
+
+
+@media (max-width:992px){
+    .bingo img{
+        width:400px;
+        height:145px;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+
+
+
+
+/* About Us carousel */
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
   z-index: 1;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.carousel-fade .carousel-control {
+  z-index: 2;
+} 
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+} 
+.carousel-caption {
+    text-shadow: 0 1px 4px rgba(0,0,0,.9);
+  font-size:17px
+}
+.carousel-caption h3 {
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+}
+   
+ 
+    .carousel,
+    .carousel-inner,
+    .carousel-inner .item {
+      height: 100%;
+      width: 100%;
+    }     
+        
+    .carousel,
+    .carousel-inner,
+    .carousel-inner .item {
+      min-height: 600px;
+      max-height:600px;
+    }
 
-.dropdown:hover .dropdown-content {display: block;}
+    .item:nth-child(1) {
+      background: url('TacoShack/people/ISABELLAM.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
+    .item:nth-child(2) {
+      background: url('TacoShack/people/KALLE.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(3) {
+      background: url('TacoShack/people/KATELYNNY.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    
+    .item:nth-child(4) {
+      background: url('TacoShack/people/SIANAA.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(5) {
+      background: url('TacoShack/people/AIDANW.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(6) {
+      background: url('TacoShack/people/RYANO.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    
+    .item:nth-child(7) {
+      background: url('TacoShack/people/BRYANK.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(8) {
+      background: url('TacoShack/people/BRANDENB.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(9) {
+      background: url('TacoShack/people/GARYG.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    
+    .item:nth-child(10) {
+      background: url('TacoShack/people/OBEDP.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(11) {
+      background: url('TacoShack/people/DEANDREA.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(12) {
+      background: url('TacoShack/people/ETHANC.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    
+    .item:nth-child(13) {
+      background: url('TacoShack/people/ANTHONYB.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(14) {
+      background: url('TacoShack/people/AM.svg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(15) {
+      background: url('TacoShack/people/LANDONB.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    
+    .item:nth-child(16) {
+      background: url('TacoShack/people/AI.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(17) {
+      background: url('TacoShack/people/CODYC.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(18) {
+      background: url('TacoShack/people/VINCENTS.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    
+    .item:nth-child(19) {
+      background: url('TacoShack/people/MICHAELV.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(20) {
+      background: url('TacoShack/people/BIANCAS.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(21) {
+      background: url('TacoShack/people/LAURAW.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    
+    .item:nth-child(22) {
+      background: url('TacoShack/people/VANESSAK.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(23) {
+      background: url('TacoShack/people/EDWARDA.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(24) {
+      background: url('TacoShack/people/PETERD.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    
+    .item:nth-child(25) {
+      background: url('TacoShack/people/NATHANB.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(26) {
+      background: url('TacoShack/people/ZACHARYS.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(27) {
+      background: url('TacoShack/people/NICHOLASH.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    
+    .item:nth-child(28) {
+      background: url('TacoShack/people/EDGARJ.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(29) {
+      background: url('TacoShack/people/ALEXANDERL.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+
+    .item:nth-child(30) {
+      background: url('TacoShack/people/NICHOLASS.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    
+
+.col-lg-6 h3 {
+    color: gold;
+}
+
+.btn-block {
+    background-color: gold;
+    color: black;
+    font-weight: bold;
+}
+
+.btn-block:hover {
+    background-color: black;
+    color: white;
+}
+
+.col-lg-6 h2 {
+    color: gold;
+    font-weight: bolder;
+}
+
+.col-lg-6 h4 {
+    color: gold;
+    font-weight: bold;
+}
+
+.FAQ h1 {
+    font-weight: bolder;
+    color:gold;
+}
+
+.FAQ h2 {
+    font-weight: bolder;
+    color:black;
+}
+
+.FAQ h4 {
+    font-weight: bold;
+    color:black;
+}
+
+.aboutUSPARA{
+    background-color:black;
+    color:gold;
+}
+
+@media (max-width:768px){
+    .col-lg-6{
+        text-align:center;
+    }
+}

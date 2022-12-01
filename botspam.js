@@ -56,4 +56,9 @@ $("#cssmenu").menumaker({
 });
 });
 })(jQuery);
-//xiuxiu
+
+
+/* carousel */
+
+
+$('#carouselFade').carousel();
