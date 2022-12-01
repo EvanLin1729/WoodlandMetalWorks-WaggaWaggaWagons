@@ -3027,8 +3027,19 @@ footer img {
     color:gold;
 }
 
-@media (max-width:768px){
-    .col-lg-6{
-        text-align:center;
+.col-lg-6 {
+        text-align: center;
     }
+
+
+
+@media (max-width:768px){
+    .col-lg-6 img {
+        max-width: 400px;
+                margin-bottom: 50px;
+
+    }
+    
+    
 }
+
