@@ -578,7 +578,7 @@ nav#cssmenu {
     background-attachment: fixed;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .parallax-1 {
         width: 100%;
         height: 300px;
@@ -633,7 +633,7 @@ nav#cssmenu {
     background-attachment: fixed;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .parallax-2 {
         width: 100%;
         height: 300px;
@@ -655,7 +655,7 @@ nav#cssmenu {
     background-attachment: fixed;
 }
 
-@media (max-width:768px) {
+@media (max-width:992px) {
     .parallax-3 {
         width: 100%;
         height: 300px;
@@ -3152,25 +3152,27 @@ footer space {
    margin-right: 20px;
 }
 
-.superSilly img {
-    width: 100%;
-    height:350px;
-    padding: 10px;
-}
 
-@media (max-width:992px) {
+
+@media (max-width:1200px) {
    .superSilly img {
     height:250px;
-    width:250px;
-    padding: 15px;
+    width:350px;
+    
     }
+    .superSillyChess img {
+        height:400px;
+        width:300px;
+    }
+    
 }
 
 @media (max-width:768px) {
        .superSilly img {
-        height:200px;
-        width:200px;
-        padding: 10px;
+        height:150px;
+        width:250px;
+        
     }
 }
+    
     
